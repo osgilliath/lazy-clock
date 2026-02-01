@@ -1,5 +1,7 @@
 ## lazy-clock
 
+![clock](https://github.com/osgilliath/lazy-clock/blob/master/images/clock.png)
+
 a clock in the terminal, inspired by [peaclock](https://github.com/octobanana/peaclock), but since it was not availabe for windows, I had to take matters into my own hands and make one myself.
 
 It shows live clock (with seconds as well), and the date as well.
