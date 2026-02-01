@@ -1,13 +1,12 @@
+#!/usr/bin/env node
 const blessed = require('blessed');
 const { renderDigit, renderColon } = require('./digital-clock.js');
 
-// Create a screen object.
 const screen = blessed.screen({
   smartCSR: true,
   title: 'Lazy Clock'
 });
 
-// Create a box to hold the clock.
 const clockBox = blessed.box({
   top: 'center',
   left: 'center',
@@ -21,7 +20,6 @@ const clockBox = blessed.box({
   }
 });
 
-// Append our box to the screen.
 screen.append(clockBox);
 
 function updateClock() {
@@ -53,16 +51,12 @@ function updateClock() {
   screen.render();
 }
 
-// Initial display
 updateClock();
 
-// Update the clock every second
 setInterval(updateClock, 1000);
 
-// Quit on Escape, q, or Control-C.
 screen.key(['escape', 'q', 'C-c'], function(ch, key) {
   return process.exit(0);
 });
 
-// Render the screen.
 screen.render();
