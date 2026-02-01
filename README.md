@@ -11,4 +11,8 @@ npx lazy-clock
 
 ## How it centres
 
-It uses blessed 
+It uses blessed library, that creates a box in the centre of the terminal window which then contains the clock
+
+## Bug
+
+When the terminal width is shrinked, the clock bugs and is unusable (needs fixing).
