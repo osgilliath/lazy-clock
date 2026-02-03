@@ -17,4 +17,6 @@ It uses blessed library, that creates a box in the centre of the terminal window
 
 ## Bug
 
+![bug](https://github.com/osgilliath/lazy-clock/blob/master/images/bug.png)
+
 When the terminal width is shrinked, the clock bugs and is unusable (needs fixing).
